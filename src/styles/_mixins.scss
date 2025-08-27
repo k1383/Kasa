@@ -1,0 +1,4 @@
+@mixin Grid-3C(){ // Grid-3C → columns = 3 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} //   @include Grid-3C();

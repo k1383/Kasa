@@ -1,0 +1,42 @@
+@import "./variables";
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+Header {
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    * {
+        margin: 0;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 24px;
+        font-family: $Pacifico;
+        color: $red;
+    }
+
+    nav {
+        display: flex;
+        gap: 50px;
+        
+        li {
+            list-style: none;
+        } 
+
+        a {
+            font-family: $Inter;
+            text-decoration: none;
+            color: #374151;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}

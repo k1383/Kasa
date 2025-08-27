@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./mixins";
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+Footer {
+    background-color: $black;
+    padding: 30px 0;
+
+    div {
+        @include Grid-3C();
+    }
+
+    h4 {
+        color: $white;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: $Inter;
+    }
+    article p {
+        color: $gray;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: $Inter;
+    }
+    #Copyright {
+        text-align: center;
+        color: $gray;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: $Inter;
+    }
+}
