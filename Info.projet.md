@@ -46,6 +46,11 @@ _mixins.scss → Création de mixins pour les bloc répétitive notamment les di
         grid-template-columns: 1fr 1fr 1fr;
     } //   @include Grid-3C();
 
+    @mixin Grid-2C(){ // Grid-2C → columns = 2
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } //   @include Grid-2C();
+
 ## Icones
     
 Utilisation des site suivant pour récupérer les icones et les intégrer a mon projet react 
@@ -57,7 +62,7 @@ Utilisation des site suivant pour récupérer les icones et les intégrer a mon 
     
 `npm install react-icons --save`
     
-## Ressources
+## Ressources utiliser 
     
 - https://stackoverflow.com/questions/73801978/find-method-doesnt-work-properly-in-react
     

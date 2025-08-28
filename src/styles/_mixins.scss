@@ -2,3 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 } //   @include Grid-3C();
+
+@mixin Grid-2C(){ // Grid-2C → columns = 2
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} //   @include Grid-2C();

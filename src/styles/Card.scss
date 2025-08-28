@@ -65,8 +65,7 @@ img {
 @media screen and (max-width:1024px) {
     #Card {
         > div {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            @include Grid-2C();
         }
     }
 }
