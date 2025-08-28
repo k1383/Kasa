@@ -5,7 +5,7 @@
     "location": "Marseille, France",
     "pictures": [
       "/image/c1.jpg",
-      "/image/c1.jpg"    
+      "/image/c2.jpg"    
     ],
     "tags": [
       "Vue mer",
@@ -150,7 +150,7 @@
     "title": "Appartement lumineux \u00e0 Strasbourg",
     "location": "Strasbourg, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c7.jpg",
       "/image/c5.jpg"
     ],
     "tags": [
@@ -175,7 +175,7 @@
     "title": "Maison avec piscine \u00e0 Aix-en-Provence",
     "location": "Aix-en-Provence, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c8.jpg",
       "/image/c5.jpg" 
     ],
     "tags": [
@@ -200,7 +200,7 @@
     "title": "Studio \u00e9tudiant \u00e0 Lille",
     "location": "Lille, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c9.webp",
       "/image/c5.jpg"
     ],
     "tags": [
@@ -224,7 +224,7 @@
     "title": "Chalet alpin \u00e0 Chamonix",
     "location": "Chamonix, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c10.jpg",
       "/image/c5.jpg"
     ],
     "tags": [
@@ -249,7 +249,7 @@
     "title": "Appartement chic \u00e0 Paris",
     "location": "Paris, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c11.webp",
       "/image/c5.jpg"
     ],
     "tags": [
@@ -274,7 +274,7 @@
     "title": "Maison familiale \u00e0 Nantes",
     "location": "Nantes, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c12.jpg",
       "/image/c5.jpg"
     ],
     "tags": [
@@ -299,7 +299,7 @@
     "title": "Appartement minimaliste \u00e0 Montpellier",
     "location": "Montpellier, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c13.jpg",
       "/image/c5.jpg" 
     ],
     "tags": [
@@ -323,7 +323,7 @@
     "title": "Riad traditionnel \u00e0 Marrakech",
     "location": "Marrakech, Maroc",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c14.webp",
       "/image/c5.jpg" 
     ],
     "tags": [
@@ -347,7 +347,7 @@
     "title": "Cabane sur pilotis \u00e0 Arcachon",
     "location": "Arcachon, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c15.avif",
       "/image/c5.jpg"
     ],
     "tags": [
@@ -371,7 +371,7 @@
     "title": "Appartement r\u00e9tro \u00e0 Toulouse",
     "location": "Toulouse, France",
     "pictures": [
-      "/image/c5.jpg",
+      "/image/c16.webp",
       "/image/c5.jpg" 
     ],
     "tags": [
