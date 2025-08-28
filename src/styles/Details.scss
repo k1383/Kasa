@@ -1,0 +1,54 @@
+@import "./variables";
+@import "./mixins";
+
+img {
+    width: 100%;
+    object-fit:cover;
+}
+
+#Details {
+    
+    display: flex;              
+    justify-content: center;         
+    
+    img{
+        width: 896px;
+        height: 384px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 20px;
+        font-family: $Inter;
+        color: $black;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        font-family: $Inter;
+        color: $black;
+    }
+
+    article {
+        margin: 30px 0;
+    }
+
+    #Info-people {
+        display: flex;
+        gap: 24px;
+
+        #people {
+            width: 64px;
+            height: 64px;
+            border-radius: 9999px;
+        }
+
+        p {
+            font-family: $Inter;
+            font-weight: 600;
+            font-weight: 26px;
+        }
+    }
+    
+}

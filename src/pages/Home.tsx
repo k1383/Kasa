@@ -36,11 +36,12 @@ const Home = () => {
                     <p>Découvrez des hébergements uniques et vivez comme un local partout dans le monde</p>
                 </section>
 
-                <section id='Card'>
-                    <div id='container'>
+                <section id="Card">
+                    <div id='container'>  
                         {cards.map((card) => (
                             <Card 
                                 key={card.id} 
+                                id={card.id}
                                 pictures={card.pictures}
                                 title={card.title}
                                 location={card.location}
@@ -50,6 +51,7 @@ const Home = () => {
                         ))}
                     </div>
                 </section>
+
             </main>
 
             <Footer />
