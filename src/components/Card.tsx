@@ -8,11 +8,11 @@ type CardProps = {
     pictures: string[];
     title: string;
     location: string; 
-    equipments: string[];
+    tags: string[];
     rating: string;
 };
 
-const Card: React.FC<CardProps> = ({pictures, title, location, equipments, rating, id}) => (
+const Card: React.FC<CardProps> = ({pictures, title, location, tags, rating, id}) => (
 
     
     <Link to={`/Details/${id}`}> 
@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({pictures, title, location, equipments, ratin
                 <h3>{title}</h3>
                 <p><CiLocationOn  id="location"/> {location}</p>
                 <div id="equipments">
-                <p>{equipments}</p>
+                <p>{tags}</p>
                 </div>
                 <p>{rating}</p>
             </div>

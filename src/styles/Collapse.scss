@@ -4,7 +4,7 @@
 #Collapse {
     display: flex;              
     justify-content: center;  
-       
+
     h3 {
         font-family: $Inter;
         font-weight: 600;
@@ -12,25 +12,33 @@
         margin: 0 30px;
 
     }
+    
+    details {
+        margin: 15px 0;
 
-    p {
-        font-family: $Inter;
-        font-weight: 400;
-        font-size: 16px;
-    }
+        summary {
+            list-style: none; 
+            display: flex;
+            width: 847px;
+            height: 56px;
+            border: 1px solid $gray;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 650px;
+        }
 
-    article {
-        width: 847px;
-        height: 56px;
-        border: 1px solid $gray;
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        gap: 650px;
-    }
+        .arrowbottom {
+            font-size: 25px;
+        }
 
-    .arrowbottom {
-        font-size: 25px;
+        p {
+            font-family: $Inter;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 10px 30px;
+        }
+
     }
 
 }

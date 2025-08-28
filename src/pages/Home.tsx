@@ -16,7 +16,7 @@ type Card = {
     pictures: string[];
     title: string;
     location: string; 
-    equipments: string[];
+    tags: string[];
     rating: string;
 }
 
@@ -45,7 +45,7 @@ const Home = () => {
                                 pictures={card.pictures}
                                 title={card.title}
                                 location={card.location}
-                                equipments={card.equipments}
+                                tags={card.tags}
                                 rating={card.rating}
                             />
                         ))}

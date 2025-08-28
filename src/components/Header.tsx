@@ -7,7 +7,7 @@ import '../styles/Header.scss'
 const Header = () => (
 
     <header className='container'>
-        <h1>Kasa</h1>
+        <a href="/">Kasa</a>
         <nav>
             <Link to='/'>Accueil</Link>
             <Link to='#'>À propos</Link>

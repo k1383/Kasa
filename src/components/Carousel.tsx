@@ -19,17 +19,17 @@ type CarouselProps = {
 
 const Carousel: React.FC<CarouselProps> = ({pictures,title,location,equipments,host,}) => {
     
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
-    };
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+  };
 
-    const prevSlide = () => {
-        setCurrentIndex(
-            (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
-        );
-    };
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
+    );
+  };
 
   return (
     <section id="Details">
