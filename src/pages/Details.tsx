@@ -16,7 +16,7 @@ type Carousel = {
     pictures: string[];
     title: string;
     location: string; 
-    equipments: string[];
+    tags: string[];
     host: {
         name: string;
         picture: string;
@@ -46,7 +46,7 @@ const Detail = () => {
                     pictures={carousel.pictures}
                     title={carousel.title}
                     location={carousel.location}
-                    equipments={carousel.equipments}
+                    tags={carousel.tags}
                     host={carousel.host}
                 /> 
 

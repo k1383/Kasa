@@ -18,6 +18,7 @@
 
         article {
             display: flex;
+            justify-content: space-between;
             width: 847px;
             height: 56px;
             border: 1px solid $gray;
@@ -26,7 +27,8 @@
             margin: 10px 0;
         }
         .arrow {
-            font-size: 25px;
+            font-size: 35px;
+            margin: 0 20px;
         }
 
         p {

@@ -10,14 +10,14 @@ type CarouselProps = {
   pictures: string[];
   title: string;
   location: string;
-  equipments: string[];
+  tags: string[];
   host: {
     name: string;
     picture: string;
   };
 };
 
-const Carousel: React.FC<CarouselProps> = ({pictures,title,location,equipments,host}) => {
+const Carousel: React.FC<CarouselProps> = ({pictures,title,location,tags,host}) => {
     
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -39,8 +39,9 @@ const Carousel: React.FC<CarouselProps> = ({pictures,title,location,equipments,h
           <div id="Info">
             <h2>{title}</h2>
             <p><CiLocationOn id="location" /> {location}</p>
-            <div id="equipments">
-              <p>{equipments}</p>
+            <div id="tags">
+              <p>{tags[0]}</p>
+              <p>{tags[1]}</p>
             </div>
             <div id="Info-people">
               <img id="people" src={host.picture} alt={host.name} />

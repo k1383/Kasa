@@ -23,7 +23,8 @@ const Card: React.FC<CardProps> = ({pictures, title, location, tags, rating, id}
                 <h3>{title}</h3>
                 <p><CiLocationOn  id="location"/> {location}</p>
                 <div id="tags">
-                    <p>{tags}</p>
+                    <p>{tags[0]}</p>
+                    <p>{tags[1]}</p>
                 </div>
                 <p>{rating}</p>
             </div>

@@ -31,10 +31,10 @@ const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  {
                     <div>
                         <article onClick={Description}>
                             <h3>Description</h3>
-                            {!DescriptionOpen ? (
-                                <IoMdArrowRoundDown />
+                            {DescriptionOpen ? (
+                                <IoMdArrowRoundDown className='arrow'/>
                                 ) : (
-                                <IoMdArrowRoundUp />
+                                <IoMdArrowRoundUp className='arrow'/>
                             )}
                         </article>
                         {!DescriptionOpen && <p>{description}</p>}
@@ -44,9 +44,9 @@ const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  {
                         <article onClick={Equipements}>
                             <h3>Équipements</h3>
                             {EquipementsOpen ? (
-                                <IoMdArrowRoundDown />
+                                <IoMdArrowRoundDown className='arrow'/>
                                 ) : (
-                                <IoMdArrowRoundUp />
+                                <IoMdArrowRoundUp className='arrow'/>
                             )}
                         </article>
                         {EquipementsOpen && <p>{equipments}</p>}
