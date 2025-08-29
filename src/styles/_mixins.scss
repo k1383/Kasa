@@ -7,3 +7,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 } //   @include Grid-2C();
+
+@mixin Grid-1C(){ // Grid-1C → columns = 1
+    display: grid;
+    grid-template-columns: 1fr ;
+} //   @include Grid-1C();

@@ -13,22 +13,19 @@
 
     }
     
-    details {
+    div {
         margin: 15px 0;
 
-        summary {
-            list-style: none; 
+        article {
             display: flex;
             width: 847px;
             height: 56px;
             border: 1px solid $gray;
             border-radius: 16px;
-            display: flex;
             align-items: center;
-            gap: 650px;
+            margin: 10px 0;
         }
-
-        .arrowbottom {
+        .arrow {
             font-size: 25px;
         }
 

@@ -1,50 +1,63 @@
 /* Scss */
 import '../styles/Collapse.scss';
 
-import { IoMdArrowDown } from "react-icons/io"; // Arrow bottom <IoMdArrowDown />
+/* Icons */
+import { IoMdArrowRoundDown } from "react-icons/io"; // <IoMdArrowRoundDown />
+import { IoMdArrowRoundUp } from "react-icons/io"; // <IoMdArrowRoundUp />
+import { useState } from "react";
 
 type CollapseProps = {
     description: string;
     equipments: string[];
 }
 
-// const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-//     e.preventDefault()
-// };
+const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  {
 
-const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  (
-    <section id="Collapse">
-        <div>
-            <details>
-                <summary>
-                    <h3>Description</h3>
-                    <span><IoMdArrowDown className='arrowbottom'/></span>
-                </summary>
-                <p>{description}</p>
-            </details>
+  const [DescriptionOpen, setDescriptionOpen] = useState(open);  
+  const [EquipementsOpen, setEquipementsOpen] = useState(open);  
 
-            <details>
-                <summary>
-                    <h3>Équipement</h3>
-                    <span><IoMdArrowDown className='arrowbottom'/></span>
-                </summary>
-                <p>{equipments}</p>
-            </details>
-            
-        </div>
-    </section>
-);
+    const Description = () => {
+        setDescriptionOpen((prev) => !prev);
+    };
+
+    const Equipements = () => {
+        setEquipementsOpen((prev) => !prev);
+    };
+
+    return (
+        <>
+            <section id="Collapse">
+                <div>
+                    <div>
+                        <article onClick={Description}>
+                            <h3>Description</h3>
+                            {!DescriptionOpen ? (
+                                <IoMdArrowRoundDown />
+                                ) : (
+                                <IoMdArrowRoundUp />
+                            )}
+                        </article>
+                        {!DescriptionOpen && <p>{description}</p>}
+                    </div>
+
+                    <div>
+                        <article onClick={Equipements}>
+                            <h3>Équipements</h3>
+                            {EquipementsOpen ? (
+                                <IoMdArrowRoundDown />
+                                ) : (
+                                <IoMdArrowRoundUp />
+                            )}
+                        </article>
+                        {EquipementsOpen && <p>{equipments}</p>}
+                    </div>             
+                </div>
+            </section>
+        </>
+    )
+};
 
 export default Collapse;
 
-
-            // <article>
-            //     <h3>Description</h3>
-            //     <span onClick={handleClick}><IoMdArrowDown className='arrowbottom'/></span>
-            // </article>
-            // <p>{description}</p>
-            // <article>
-            //     <h3>Équipements</h3>
-            //     <span onClick={handleClick}><IoMdArrowDown className='arrowbottom'/></span>
-            // </article>
-            // <p>{equipments}</p>
+// <p>{description}</p>
+// <p>{equipments}</p>

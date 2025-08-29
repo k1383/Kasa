@@ -32,8 +32,8 @@ type Collapse = {
 const Detail = () => {
     
     const { id } = useParams();
-    const carousel = data.find(item => item.id === id);
-    const collapse = data.find(item => item.id === id);
+    const carousel = data.find(item => item.id === id)!;
+    const collapse = data.find(item => item.id === id)!;
     
     return (
         

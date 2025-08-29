@@ -1,7 +1,7 @@
 import { CiLocationOn } from "react-icons/ci"; // Location <CiLocationOn />
 import { FaArrowLeft } from "react-icons/fa"; // Arrow left <FaArrowLeft />
 import { FaArrowRight } from "react-icons/fa"; // Arrow right <FaArrowRight />
-import React, { useState } from "react";
+import { useState } from "react";
 
 /* Scss */
 import "../styles/Details.scss";
@@ -17,7 +17,7 @@ type CarouselProps = {
   };
 };
 
-const Carousel: React.FC<CarouselProps> = ({pictures,title,location,equipments,host,}) => {
+const Carousel: React.FC<CarouselProps> = ({pictures,title,location,equipments,host}) => {
     
   const [currentIndex, setCurrentIndex] = useState(0);
 

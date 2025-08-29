@@ -35,7 +35,7 @@ Intégration du fichier logements.json avec le code json donner par le formateur
     
 ## Dossier styles
     
-    ├── styles / # _variables.scss, _mixins.scss, Header.scss, Footer.scss, Card.scss, Collapse.scss
+    ├── styles / # _variables.scss, _mixins.scss, Header.scss, Footer.scss, Card.scss, Collapse.scss, NotFound.scss
     
 _variables.scss → Récupération des fonts et des couleurs repérer dans le figma 
     
@@ -51,6 +51,12 @@ _mixins.scss → Création de mixins pour les bloc répétitive notamment les di
         grid-template-columns: 1fr 1fr;
     } //   @include Grid-2C();
 
+    @mixin Grid-1C(){ // Grid-1C → columns = 1
+        display: grid;
+        grid-template-columns: 1fr ;
+    } //   @include Grid-1C();
+
+
 ## Icones
     
 Utilisation des site suivant pour récupérer les icones et les intégrer a mon projet react 
@@ -64,9 +70,13 @@ Utilisation des site suivant pour récupérer les icones et les intégrer a mon 
     
 ## Ressources utiliser 
     
-- https://stackoverflow.com/questions/73801978/find-method-doesnt-work-properly-in-react
+- https://stackoverflow.com/questions/73801978/find-method-doesnt-work-properly-in-react (/:id)
     
     ```bash
     let result = data.find(item => item.id === id)
     ```
-- https://medium.com/@shuklawhyaman/image-carousel-in-react-222bf9b5c80d
+- https://medium.com/@shuklawhyaman/image-carousel-in-react-222bf9b5c80d (Carousel)
+
+- https://www.w3schools.com/react/react_usestate.asp   (Collapse)
+
+-https://medium.com/edonec/build-a-react-collapsible-component-from-scratch-using-react-hooks-typescript-73dfd02c9208 (Collapse)
