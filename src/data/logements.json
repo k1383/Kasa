@@ -5,7 +5,8 @@
     "location": "Marseille, France",
     "pictures": [
       "/image/c1.jpg",
-      "/image/c2.jpg"    
+      "/image/c2.jpg",   
+      "/image/c5.jpg" 
     ],
     "tags": [
       "Vue mer",
@@ -30,7 +31,8 @@
     "location": "Lyon, France",
     "pictures": [
       "/image/c2.jpg",
-      "/image/c2.jpg"
+      "/image/c5.jpg",
+      "/image/c1.jpg"
     ],
     "tags": [
       "Centre-ville",

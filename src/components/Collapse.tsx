@@ -13,8 +13,8 @@ type CollapseProps = {
 
 const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  {
 
-  const [DescriptionOpen, setDescriptionOpen] = useState(open);  
-  const [EquipementsOpen, setEquipementsOpen] = useState(open);  
+  const [DescriptionOpen, setDescriptionOpen] = useState(true);  // True for open / false for closed
+  const [EquipementsOpen, setEquipementsOpen] = useState(false);  
 
     const Description = () => {
         setDescriptionOpen((prev) => !prev);
@@ -28,28 +28,33 @@ const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  {
         <>
             <section id="Collapse">
                 <div>
-                    <div>
+                    <div className='border'>
                         <article onClick={Description}>
                             <h3>Description</h3>
-                            {DescriptionOpen ? (
+                            {!DescriptionOpen ? (
                                 <IoMdArrowRoundDown className='arrow'/>
                                 ) : (
                                 <IoMdArrowRoundUp className='arrow'/>
                             )}
                         </article>
-                        {!DescriptionOpen && <p>{description}</p>}
+                        {DescriptionOpen && <p>{description}</p>}
                     </div>
 
-                    <div>
+                    <div className='border'>
                         <article onClick={Equipements}>
                             <h3>Équipements</h3>
                             {EquipementsOpen ? (
-                                <IoMdArrowRoundDown className='arrow'/>
-                                ) : (
                                 <IoMdArrowRoundUp className='arrow'/>
+                                ) : (
+                                <IoMdArrowRoundDown className='arrow'/>
                             )}
                         </article>
-                        {EquipementsOpen && <p>{equipments}</p>}
+                        <div>
+                            {EquipementsOpen && <p>{equipments[0]}</p>}
+                            {EquipementsOpen && <p>{equipments[1]}</p>}
+                            {EquipementsOpen && <p>{equipments[2]}</p>}
+                            {EquipementsOpen && <p>{equipments[3]}</p>}
+                        </div>
                     </div>             
                 </div>
             </section>

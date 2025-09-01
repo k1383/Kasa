@@ -26,8 +26,7 @@ const Carousel: React.FC<CarouselProps> = ({pictures,title,location,tags,host}) 
   };
 
   const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
     );
   };
 
