@@ -8,17 +8,16 @@ import { Link } from "react-router-dom";
 /* Scss */
 import "../styles/Card.scss";
 
-
 type CardProps = {
     id: string;
     pictures: string[];
     title: string;
-    location: string; 
+    location: string;  
     tags: string[];
     rating: string;
 };
 
-
+const rating5 = [<FaStar className="IconsStar"/>,<FaStar className="IconsStar"/>,<FaStar className="IconsStar"/>,<FaStar className="IconsStar"/>,<FaStar className="IconsStar"/>]
 
 const Card: React.FC<CardProps> = ({pictures, title, location, tags, rating, id}) => (
 
@@ -37,7 +36,7 @@ const Card: React.FC<CardProps> = ({pictures, title, location, tags, rating, id}
                     <p>{tags[1]}</p>
                 </div>
                 <div id="rating">
-                    <span><FaStar className="IconsStar"/> </span>
+                    <span>{rating5}</span>
                     <p>{rating}</p>
                 </div>
             </div>
