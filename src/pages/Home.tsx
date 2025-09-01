@@ -33,7 +33,7 @@ const Home = () => {
             <main>
                 <section id='Introduction'>
                     <h2>Trouvez votre logement idéal</h2>
-                    <p>Découvrez des hébergements uniques et vivez comme un local partout dans le monde</p>
+                    <p>Découvrez des hébergements uniques et vivez comme un local <br />partout dans le monde</p>
                 </section>
 
                 <section id="Card">

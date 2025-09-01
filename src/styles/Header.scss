@@ -24,6 +24,10 @@ Header {
         text-decoration: none;
     }
 
+    #Bugermenu {
+        display: none;
+    }
+
     nav {
         display: flex;
         gap: 50px;
@@ -38,6 +42,19 @@ Header {
             color: #374151;
             font-size: 16px;
             font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    Header {
+        #Bugermenu {
+            display: flex;
+            font-size: 22px;
+        }
+
+        nav {
+            display: none;
         }
     }
 }

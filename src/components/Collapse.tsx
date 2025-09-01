@@ -13,7 +13,7 @@ type CollapseProps = {
 
 const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  {
 
-  const [DescriptionOpen, setDescriptionOpen] = useState(true);  // True for open / false for closed
+  const [DescriptionOpen, setDescriptionOpen] = useState(false);  // True for open / false for closed
   const [EquipementsOpen, setEquipementsOpen] = useState(false);  
 
     const Description = () => {
@@ -49,12 +49,12 @@ const Collapse: React.FC<CollapseProps> = ({description, equipments}) =>  {
                                 <IoMdArrowRoundDown className='arrow'/>
                             )}
                         </article>
-                        <div>
+                        <span>
                             {EquipementsOpen && <p>{equipments[0]}</p>}
                             {EquipementsOpen && <p>{equipments[1]}</p>}
                             {EquipementsOpen && <p>{equipments[2]}</p>}
                             {EquipementsOpen && <p>{equipments[3]}</p>}
-                        </div>
+                        </span>
                     </div>             
                 </div>
             </section>

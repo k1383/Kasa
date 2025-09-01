@@ -3,13 +3,13 @@
 
 img {
     width: 100%;
-    object-fit: cover
+    object-fit: cover;
 }
 
 #container {
     max-width: 1440px;
     padding: 0 15px;
-    margin: 70px auto;
+    margin: 50px auto;
 }
 
 #Card {
@@ -29,54 +29,82 @@ img {
         border-radius: 16px 16px;
         background-color: white;
         width: 450px;
-        height: 462px;
         box-shadow: 0px 2px 4px -2px #0000001A;
         box-shadow: 0px 4px 6px -1px #0000001A;
-    }
-
-    #Info {
-        margin: 0px 30px;
-    }
-    
-    h3 {
-        font-weight: 600;
-        font-size: 20px;
-        font-family: $Inter;
-        color: $black;
-    }
-
-    p {
-        font-weight: 400;
-        font-size: 14px;
-        font-family: $Inter;
-        color: $black;
-    }
-
-    #location {
-        font-size: 14px;
-        color: $black;
     }
 
     a {
         text-decoration: none;
     }
 
-    #tags{
-        display: flex; 
-        gap: 5px;
+    #info {
+
+        margin: 0 30px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            font-family: $Inter;
+            color: $black;
+        }
+
         p {
-            background: linear-gradient(113.64deg, #667EEA 0%, #764BA2 100%);
-            border-radius: 99px;
-            padding: 5px 10px;
-            color: $white;
+            font-weight: 400;
+            font-size: 18px;
+            font-family: $Inter;
+            color: $black;
+        }
+
+        #location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            #IconLocation {
+                font-size: 22px;
+                color: $black;
+            }
+        }
+
+        #tags {
+            display: flex; 
+            gap: 5px;
+
+            p {
+                background: linear-gradient(113.64deg, #667EEA 0%, #764BA2 100%);
+                border-radius: 99px;
+                padding: 3px 10px;
+                color: $white;
+                font-size: 16px;
+            }
+        }
+       
+        #rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .IconsStar {
+                color: #FFD700;
+                font-size: 22px;
+            }
         }
     }
+
 }
 
 @media screen and (max-width:1024px) {
     #Card {
         > div {
             @include Grid-2C();
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    #Card {
+        > div {
+            @include Grid-1C();
         }
     }
 }
